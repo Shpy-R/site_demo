@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Shpylyk Ruslan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Шпилик Руслан</h1>
+        <p>
+            67, вулиця Петлюри, Львів | +38067123456 | ruslanshpylyk@gmail.com
+        </p>
+        <p>
+            Фахівець з кібербезпеки
+        </p>
+        <button id="theme-toggle">Змінити тему</button>
+    </header>
+
+    <main>
+        <section>
+            <h2>Освіта</h2>
+            <article>
+                <h3>Червень 2027</h3>
+                <p><strong>Закінчив бакалаврат за спеціальністю Кібербезпека в НУ "Львівська політехнка"</strong></p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Навички</h2>
+            <ul>
+                <li>Рівень англійської B2</li>
+                <li>Вмію працювати з ОС Windows, Linux, MacOS</li>
+                <li>Знаю мови програмування C, C++, C#, Python</li>
+                <li>Вмію працювати з комп'ютерними мережами</li>
+                <li>Сертифікат CISCO: <a href="https://www.cisco.com/">www.cisco.com</a></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Відгуки попередніх роботодавців</h2>
+            <button id="load-comments">Завантажити відгуки</button>
+            <div id="comments-container"></div>
+        </section>
+        <section id="contact-form">
+        
+<div id="modal-overlay" class="modal-hidden">
+    <div class="modal-content">
+        <button id="close-modal">&times;</button>
+        <section>
+            <h2>Зв'язатися зі мною</h2>
+            <form action="https://formspree.io/f/xlgoavvl" method="POST">
+                <div>
+                    <label for="name">Ваше ім'я:</label>
+                    <input type="text" name="name" required>
+                </div>
+                <div>
+                    <label for="email-address">Електронна пошта:</label>
+                    <input type="email" id="email-address" name="email" placeholder="example@gmail.com" required>
+                </div>
+                <div>
+                    <label for="phone-number">Номер телефону:</label>
+                    <input type="tel" name="phone" placeholder="+380961234567">
+                </div>
+                <div>
+                    <label for="message-text">Ваше повідомлення:</label>
+                    <textarea id="message-text" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Відправити повідомлення</button>
+            </form>
+        </section>
+    </div>
+</div>
+
+        <footer>
+            <p id="system-display"></p>
+        </footer>
+    </main>
+    <script src="script.js"></script>   
+</body>
+</html>
